@@ -1,4 +1,6 @@
-const MOCK_DATA = [
+export default class BookStoreService {
+
+    data = [
     {
         id: 1,
         title: 'You Do not Know JS',
@@ -13,9 +15,9 @@ const MOCK_DATA = [
         price: 1,
         coverImage: "https://img3.labirint.ru/rc/64e84c8388de3963b9c3adf9490c84be/220x340/books50/499059/cover.jpg?1563856058"
     }
-]
+  ]
 
-export default class BookService {
+  
 
     getBooks() {
         return new Promise((resolve, reject) => {
@@ -23,9 +25,10 @@ export default class BookService {
                 if ((Math.floor(Math.random() * 100) > 75)) {
                     reject(new Error('Ошибка'))
                 }
-                resolve(MOCK_DATA)
-            }, 1000)
-        })
+                resolve(this.data)
+            }, 1000);
+        });
     }
 
+  
 }
