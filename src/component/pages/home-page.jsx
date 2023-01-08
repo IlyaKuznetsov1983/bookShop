@@ -1,4 +1,4 @@
-import React from 'react';
+
 import BookList from "../book-list";
 
 export const HomePage = () => {
@@ -8,3 +8,4 @@ export const HomePage = () => {
         </div>
     );
 };
+export default HomePage;

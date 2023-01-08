@@ -1,2 +1,5 @@
-export {HomePage} from './home-page'
-export {CartPage} from './cart-page'
+
+import CartPage from "./Cart-page";
+import HomePage from "./Home-page";
+
+export { CartPage, HomePage };

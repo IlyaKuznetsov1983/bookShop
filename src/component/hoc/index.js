@@ -1,1 +1,2 @@
-export {default} from './with-book-service'
+import withBookStoreService from "./withBookStoreService";
+export { withBookStoreService };
