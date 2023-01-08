@@ -2,10 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
-import App from "./components/app";
-import ErrorBoundary from "./components/error-boundary";
-import BookStoreService from "./services/bookstore-servise";
-import { BookStoreServiceProvider } from "./components/bookstore-service-context";
+import App from "./component/app";
+import ErrorBoundary from "./component/error-boundary";
+import BookStoreService from "./services/bookstore-service";
+import { BookStoreServiceProvider } from "./component/bookstore-service-context";
 import store from "./store";
 
 const bookstoreServise = new BookStoreService();
@@ -22,3 +22,4 @@ ReactDOM.render(
   </Provider>,
   document.getElementById("root")
 );
+
