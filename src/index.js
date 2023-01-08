@@ -4,7 +4,7 @@ import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
 import App from "./components/app";
 import ErrorBoundary from "./components/error-boundary";
-import BookStoreService from "./services/bookstore-service";
+import BookStoreService from "./services/bookstore-servise";
 import { BookStoreServiceProvider } from "./components/bookstore-service-context";
 import store from "./store";
 
@@ -21,4 +21,4 @@ ReactDOM.render(
     </ErrorBoundary>
   </Provider>,
   document.getElementById("root")
-  );
+);

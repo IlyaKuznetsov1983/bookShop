@@ -1,24 +1,22 @@
-import './book-list-item.css'
+import "./book-list-item.css";
 
-const BookListItem = ({book , onAddToCart}) => {
-    const {title, author, price, coverImage} = book;
-
-    return (
-        <div className="book-list-item">
-            <div className='book-cover'>
-                <img src={coverImage} alt='cover'/>
-            </div>
-
-            <div className='book-details'>
-                <p className='book-title'>{title}</p>
-                <p className='book-author'>{author}</p>
-                <p className='book-price'>${price}</p>
-                <button className='btn btn-primary add-to-cart' onClick={onAddToCart}>
-                    Add to cart
-                </button>
-            </div>
-        </div>
-    );
+const BookListItem = ({ book, onAddedToCart }) => {
+  const { title, author, price, coverImage } = book;
+  return (
+    <div className="book-list-item">
+      <div className="book-cover">
+        <img src={coverImage} alt="cover" />
+      </div>
+      <div className="book-details">
+        <span className="book-title">{title}</span>
+        <div className="book-author">{author}</div>
+        <div className="book-price">${price}</div>
+        <button className="btn btn-info add-to-cart" onClick={onAddedToCart}>
+          Add to cart
+        </button>
+      </div>
+    </div>
+  );
 };
 
 export default BookListItem;
